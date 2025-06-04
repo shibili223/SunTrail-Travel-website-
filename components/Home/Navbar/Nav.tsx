@@ -24,18 +24,18 @@ const Nav = ({openNav}:props) => {
     };
   window.addEventListener('scroll', bgHandler)
 
-  return () => window.removeEventListener('scroll', bgHandler)                                              //here return is a cleanUp function; use for to remove eventListener; cleanup function prevent unwanted sideEffect, memory leakage
+  return () => window.removeEventListener('scroll', bgHandler)    //here return is a cleanUp function; use for to remove eventListener; cleanup function prevent unwanted sideEffect, memory leakage
 
   }, [])
 
   return (
-    <div className={` ${navBg ? ' bg-[#1b1e7b]  shadow-md' : 'fixed'}  transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>  {/* navBg true then navbg will be blue if it false then navbg fixed without bg */} {/* bg-[#6464DC] */}
+    <div className={` ${navBg ? (' bg-[#1b1e7b]  shadow-md') : ('fixed')}  transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>  {/* navBg true then navbg will be blue if it false then navbg fixed without bg */} {/* bg-[#6464DC] */}
     
         <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
             {/* Logo */}
             <div className='flex items-center justify-center space-x-38'>
-                <div className='relative inline-block'>
-                  <MdFlight className='w-12 h-12  text-orange-500 animate-bounce transition-transform duration-500 ease-in-out' />
+                <div className='relative inline-block'  data-aos="fade-right"  data-aos-duration="2000">
+                  <MdFlight className='w-12 h-12  text-orange-500 ' /> {/* animate-bounce transition-transform duration-500 ease-in-out */}
                     {/* <Image src="/images/logo2.jpg" alt="Logo" width={130} height={60} /> */}
                 </div>
                 <h1 className='absolute text-xl md:text-2xl text-white font-bold mt-2 '>SunTrail</h1> {/* for animation animate-bounce */}
