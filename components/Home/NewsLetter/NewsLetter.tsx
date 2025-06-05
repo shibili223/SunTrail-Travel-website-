@@ -3,11 +3,9 @@ import { BsEnvelopePaper } from 'react-icons/bs'
 
 const NewsLetter = () => {
   return (
-    <div 
-    
-
-    className='bg-black pt-16 pb-16 flex flex-col items-center justify-center w-full'> {/* bg-[#979c99]  */}
-        <BsEnvelopePaper className='w-16 h-16 mt-20 text-white'/> 
+    <div className='bg-black pt-16 pb-16  w-full'> {/* bg-[#979c99]  */}
+    <div className='flex flex-col items-center justify-center w-full'  data-aos="zoom-in-up" data-aos-mirror="true">
+              <BsEnvelopePaper className='w-16 h-16 mt-20 text-white'/> 
         <h1 className='text-lg sm:text-xl md:text-2xl text-white font-semibold mt-10 tracking-widest'> 
             {/* tracking-widest used for  increasing the letter spacing of text */}
             Your Travel Journey Starts Here
@@ -22,6 +20,9 @@ const NewsLetter = () => {
             />
             <button className='px-6 py-3.5 bg-orange-700 hover:bg-orange-800 text-white mt-3 w-[95%] sm:w-[80%] md:w-[60%] lg:w-[40%] block mx-auto rounded-lg outline-none'>Subscribe</button>
         </div>
+
+
+    </div>
     </div>
   )
 }

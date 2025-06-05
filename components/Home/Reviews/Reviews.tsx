@@ -27,7 +27,7 @@ const Reviews = () => {
             </div>
           </div>
           {/* Slider */}
-          <div className='overflow-hidden'>
+          <div className='overflow-hidden' data-aos="fade-left"  >
           <ReviewSlider />
           </div>
         </div>
