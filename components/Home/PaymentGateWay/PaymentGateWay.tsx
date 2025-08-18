@@ -5,12 +5,12 @@ const PaymentGateWay = () => {
 };
 
 export default PaymentGateWay;
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // RazorPay Payment gateway Integration without backend. "Bug Ninza" youtube channel
 //without backend we achieve to trigger api call using  NextRequest, NextResponse  in 'next/server'
 
 // STEP: 1 - create a fonlder under app directory app -> create a folder(folder name is api/create-order) then under this folder create a page routeModule.ts
-// eg(app -> Folder(api/create-order) -> Page(route.ts))
+// eg(app -> Folder(api/create-order) -> Page(name: routeModule.ts))
 
 // STEP:2 - npm i razorpay
 
@@ -27,7 +27,7 @@ export default PaymentGateWay;
 //   key_secret: process.env.RAZORPAY_SECRET_KEY,
 // });
 
-//  // this function handle post request
+//  // this below function handle post request
 
 // export async function POST(request: NextRequest) {
 //   try {
@@ -131,12 +131,13 @@ export default PaymentGateWay;
 
 
 
-
-////payment Gateway code with backend api using reactquery and axios (refer schola parent app payment file)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////***payment Gateway code with backend api using reactquery and axios (refer schola parent app payment file)
 // ("use client");
 // import Script from "next/script";
 // import axios from "axios";
 // import { errorMonitor } from "node:events";
+// import { showError, showSuccess } from '../../components/Toast'
 
 // declare global {
 //   interface Window {
@@ -190,7 +191,7 @@ export default PaymentGateWay;
 //           axios
 //             .post(`${schola_base_url}api/RazorPayment/PaymentRequest`, values)
 //             .then(() => {
-//               alert("Payment successful and verified!");
+//               alert("Payment successful and verified! "); or showSuccess(`Thank you! Payment recieved successfully Amount: ${response?.totalAmount} OrderId: ${response?.orderId}`);
 //             })
 //             .catch(() => {
 //               alert("Payment verification failed.");
@@ -231,3 +232,18 @@ export default PaymentGateWay;
 // };
 
 // export default Payments;
+
+
+
+
+
+
+// //////  for showError and showSuccess dialogue box 
+// import toast from "react-hot-toast";
+// import "../app/globals.css";
+// export function showSuccess(message = "") {
+//   toast.success(message, { className: " text-white" });
+// }
+// export function showError(message = "") {
+//   toast.error(message, { className: " text-white" });
+// }
