@@ -8,7 +8,7 @@ import Reviews from './Reviews/Reviews'
 import News from './News/News'
 import NewsLetter from './NewsLetter/NewsLetter'
 // for  animation 
-//  step: 1 goto AOS website -> click above githib icon -> scroll down then get npm i command paste it terminal and also get below 2 codes.this below first line shows error howe the mouse on the error then get npm i type code copy and pate it terminal
+//  step: 1 goto AOS website -> click above github icon -> scroll down then get npm i command paste it terminal and also get below 2 codes.this below first line shows error, hover the mouse on the error then get npm i type code copy and pate it terminal
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 

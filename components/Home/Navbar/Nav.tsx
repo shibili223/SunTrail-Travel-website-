@@ -14,7 +14,7 @@ type props = {
 // Navbar for large screen
 const Nav = ({openNav}:props) => {
 
-//  when we scroll down the page then navbar bg will be blue , the initial loading navbar shows without bg
+//  when we scroll down the page, then navbar bg will be blue , the initial loading navbar shows without bg
   const [navBg, setNavBg] = useState(false)
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Nav = ({openNav}:props) => {
             <div className='flex items-center space-x-4'>
               <button className='bg-white text-gray-900 md:px-12 md:py-2.5 px-6 py-2 text-base hover:text-white hover:bg-orange-600 rounded-lg transition-all duration-200'>Book Now</button>
               {/* Burger Menu for small screens */}
-              <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+              <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden'/> {/* lg:hidden means when it large screen then the burger menu not visible */}
             </div>
         </div>
     </div>

@@ -9,7 +9,7 @@ type props = {
 }
 
 const MobileNav = ({showNav, closeNav}:props) => {
-  const navOpen = showNav? 'translate-x-0' : 'translate-x-[-100%]'  //to hise and show mobile navBar(slide navbar) 'translate-x-[-100%]':for close | 'translate-x-0': for open
+  const navOpen = showNav? 'translate-x-0' : 'translate-x-[-100%]'  //to hide and show mobile navBar(slide navbar) 'translate-x-[-100%]':for close | 'translate-x-0': for open
   return (
     <div>
       {/* overlay */}
