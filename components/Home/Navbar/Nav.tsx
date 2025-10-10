@@ -41,7 +41,7 @@ const Nav = ({openNav}:props) => {
                 <h1 className='absolute text-xl md:text-2xl text-white font-bold mt-2 '>SunTrail</h1> {/* for animation animate-bounce */}
             </div>
             {/* NavLinks */}
-            <div className='hidden lg:flex items-center space-x-10'>   {/* navlinks hidden in smaller devise */}
+            <div className='hidden lg:flex items-center space-x-10'>   {/* navlinks hidden in smaller devise. here in default the div is hidden.You apply hidden as the base or default behavior (for mobile/small screens).Then, you apply lg:flex to override that behavior on large screens and up.*/}
               {navLinks?.map((link) => {
                 return (
                 <Link href={link?.url} key={link?.id}>
